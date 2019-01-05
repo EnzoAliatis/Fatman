@@ -1,0 +1,36 @@
+{
+  "name": "Fatman-gcp",
+  "version": "0.1.0",
+  "description": "Graphql server hosted in GCP.",
+  "main": "index.js",
+  "scripts": {
+    "build": "./node_modules/.bin/babel src -s -D -d dist",
+    "dev": "nodemon --exec babel-node src/index.js ",
+    "start": "yarn build && node dist/index.js"
+  },
+  "author": "Enzo Aliatis",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@babel/cli": "^7.2.0",
+    "@babel/core": "^7.2.0",
+    "@babel/node": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@google-cloud/logging-winston": "^0.10.2",
+    "apollo-server-express": "^2.2.6",
+    "babel-preset-minify": "^0.5.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "express-winston": "^3.0.1",
+    "graphql": "^14.0.2",
+    "graphql-tools": "^4.0.3",
+    "lodash.merge": "^4.6.1",
+    "mongoose": "^5.3.16",
+    "nconf": "^0.10.0",
+    "winston": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  }
+}
